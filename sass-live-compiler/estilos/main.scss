@@ -1,0 +1,66 @@
+@import "./parciales/responsive"; 
+@import "./parciales/variables";
+.footer{
+   height: 3rem;
+   border-radius: 2%;
+   background: rgb(2,0,36);
+   background: -moz-linear-gradient(298deg, rgba(2,0,36,1) 0%, rgba(0,10,10,1) 4%, rgba(78,136,148,1) 100%);
+   background: -webkit-linear-gradient(298deg, rgba(2,0,36,1) 0%, rgba(0,10,10,1) 4%, rgba(78,136,148,1) 100%);
+   background: linear-gradient(298deg, rgba(2,0,36,1) 0%, rgba(0,10,10,1) 4%, rgba(78,136,148,1) 100%);
+   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#4e8894",GradientType=1);
+
+   &__copyRight{
+      font-style: italic;
+      font-family:  'Allison', cursive;
+      font-weight: bold;
+      font-size: 1.4rem;
+      float: left;
+      transition: all 3s;
+   }
+   &__copyRight:hover{
+      margin-left: .8rem;
+      color: $verde1;
+      transform: scale(110% , 110%)
+   }
+}
+/* Menu Navegable por categoria */
+.menu{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   margin: 1rem 0rem 2rem 0rem;
+   padding: .8rem;
+   border-radius: .5rem;
+   background-color: $verdepastel;
+   
+   @include tabletmax{
+         display: flex;
+         flex-direction: column;
+   }
+
+   &__lista{
+      background-color: $verdeoscuroclaro;
+      padding: .5rem 1rem .5rem 1rem;
+      margin: 0rem;  
+      border-radius: 7%;
+      transition: all .3s;
+   }
+   &__lista:hover{
+      background: $rojo;
+      color: $negro;
+      transform: scale(110% , 110%);
+   }
+   &__item{
+      color: $blanco; 
+      font-weight: 600; 
+      transition: all 1s;
+      text-decoration: none;
+   }
+   &__item:hover{
+      color: $negro !important;
+      font-size: 1.1rem;
+   }
+   &__lista--select{
+      background-color: $bordo;
+   }
+}

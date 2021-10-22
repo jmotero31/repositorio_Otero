@@ -1,0 +1,85 @@
+.footer {
+  height: 3rem;
+  border-radius: 2%;
+  background: #020024;
+  background: linear-gradient(298deg, #020024 0%, #000a0a 4%, #4e8894 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#4e8894",GradientType=1);
+}
+
+.footer__copyRight {
+  font-style: italic;
+  font-family: 'Allison', cursive;
+  font-weight: bold;
+  font-size: 1.4rem;
+  float: left;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.footer__copyRight:hover {
+  margin-left: .8rem;
+  color: chartreuse;
+  -webkit-transform: scale(110%, 110%);
+          transform: scale(110%, 110%);
+}
+
+/* Menu Navegable por categoria */
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 1rem 0rem 2rem 0rem;
+  padding: .8rem;
+  border-radius: .5rem;
+  background-color: #014b4b;
+}
+
+@media screen and (max-width: 920px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menu__lista {
+  background-color: #006363;
+  padding: .5rem 1rem .5rem 1rem;
+  margin: 0rem;
+  border-radius: 7%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.menu__lista:hover {
+  background: #d80000;
+  color: black;
+  -webkit-transform: scale(110%, 110%);
+          transform: scale(110%, 110%);
+}
+
+.menu__item {
+  color: white;
+  font-weight: 600;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  text-decoration: none;
+}
+
+.menu__item:hover {
+  color: black !important;
+  font-size: 1.1rem;
+}
+
+.menu__lista--select {
+  background-color: brown;
+}
+/*# sourceMappingURL=main.css.map */
