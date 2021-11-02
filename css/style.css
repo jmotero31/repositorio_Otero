@@ -80,6 +80,7 @@
 }
 .main{
     margin-top: 14rem;
+    margin-bottom: 60rem;
 }
 /* Parrafo Index */
 .sectionParrafo{
@@ -235,65 +236,7 @@ legend{
     font-weight: bold;
     font-size:xx-large; 
     text-decoration:double;
-}
-/* Modelo de Grilla para las secciones */
-.grilla{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: repeat(12, 1fr);
-    margin-top: 3rem;
-    justify-content: center;
-    align-content: center;
-    grid-row-gap: .5rem;
-}
-.cuadrilla{
-    display: grid;
-    grid-template-areas: 
-    "imagen titulo titulo"
-    "imagen modo modo"
-    "imagen descripcion descripcion"
-    "imagen ubicacion contacto";
-    grid-template-columns: 1fr 2fr 2fr ;
-    grid-template-rows: 1fr 1fr 2fr 2fr;
-    grid-row-gap: .5rem;
-    grid-column-gap: .5rem ;
-    margin: .5rem 8rem;
-    padding: 0.5rem;
-    background-color:rgb(1, 75, 75);
-    justify-content: center;
-    align-content: center;
-    height: 22rem;
-    width: 60rem;
-}
-.imagen{
-    grid-area: imagen;
-    justify-self:center;
-    align-self: center;
-}
-.titulo{
-    grid-area: titulo;
-    justify-self: left;
-    align-self: center;
-}
-.modo{
-    grid-area: modo;
-    align-self: center;
-}
-.descripcion{
-    grid-area: descripcion;
-}
-.ubicacion{
-    grid-area: ubicacion;
-    align-self: center;
-}
-.contacto{
-    grid-area: contacto;
-    align-self: center;
-}
-.tamano{
-    height: 10rem;
-    width: 10rem;
-}   
+}  
 section div span{
     color: yellowgreen;
 }
@@ -307,7 +250,6 @@ section div p{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
 /* Footer con el span */
 .footer{
     height: 3rem;
@@ -364,4 +306,92 @@ section div p{
 }
 .margen{
     margin-left: 5rem;
+}
+.prueba1{
+    display: block;
+}
+/* Secciones del menu Responsive con GRID */
+.aviso{
+    display: grid;
+    grid-template-areas: 
+    "imagen titulo modo"
+    "imagen descripcion descripcion"
+    "imagen descripcion descripcion"
+    "ubicacion ubicacion contacto";
+    grid-template-columns: 1fr 2fr 2fr ;
+    grid-template-rows: 1fr 1fr 2fr 2fr;
+    grid-row-gap: 0rem;
+    grid-column-gap: 0rem ;
+    padding-top: 1rem;
+    margin: 1rem 1rem;
+    padding: 0.5rem .5rem;
+    background-color:rgb(1, 75, 75);
+    /* justify-content: center;
+    align-content: center; */
+    /* height: 22rem;
+    width: 60rem; */
+}
+.imagen{
+    grid-area: imagen;
+    justify-self:center;
+    align-self: center;
+    padding: 1rem;
+}
+.tamano{
+    width: 10rem;
+} 
+.titulo{
+    grid-area: titulo;
+    align-self: center;
+}
+.modo{
+    grid-area: modo;
+    align-self: center;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+.ubicacion{
+    grid-area: ubicacion;
+    align-self: center;
+}
+.contacto{
+    grid-area: contacto;
+    align-self: center;
+}
+#titulo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.35rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+}
+@media only screen and (max-width: 917px){
+    .aviso{
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "titulo"
+        "modo"
+        "descripcion"
+        "ubicacion"
+        "contacto";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        background-color: tomato;
+    }
+    .imagenPortada{
+        height: 70%;
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 1120px){
+    .tamano{
+        width: 15rem;
+    }
+}
+@media only screen and (min-width: 2000px){
+    .tamano{
+        width: 18rem;
+    }
 }
