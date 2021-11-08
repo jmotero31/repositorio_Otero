@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../sass-live-compiler/estilos/main.css">
 </head>
-<body>
+<body> 
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
         <div class="container-fluid">
@@ -40,16 +40,17 @@
         </div>
       </nav>
   </header>
+  <div class="bodyContacto">   
     <main class="anchoPrede">
-        <section>
+        <section class="contorno">
             <form action="" method="GET">
                 <fieldset>
-                    <legend><h2>Completá el formulario para enviarnos un mensaje</h2></legend>
-                    <br>
+                    <legend><h1 id="texto">Completá el formulario para enviarnos un mensaje</h1></legend>
                     <div>
-                        <label for="pregunta">Tengo una pregunta sobre</label>
-                        <br>
-                        <select name="pregunta" id="pregunta" aria-placeholder="Seleccione">
+                        <label for="pregunta" class="rotulo">Tengo una pregunta sobre</label>
+                    </div>
+                    <div>    
+                        <select name="pregunta" id="pregunta" aria-placeholder="Seleccione" class="marginPadding">
                                 <option value="" disabled selected>Seleccione</option>
                                 <option value="publicar">Publicar un aviso</option>
                                 <option value="modificar">Modificar aviso</option>
@@ -59,31 +60,39 @@
                                 <option value="reembolso">Solicitud de reembolso</option>
                         </select>
                     </div>
-                    <br>
                     <div>
-                        <label for="nombreYApellido">Nombre y Apellido</label>
-                        <br>
-                        <input type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y Apellido">
-                        <br>
+                        <label for="nombreYApellido" class="rotulo">Nombre y Apellido</label>
                     </div>
-                    <br>
+                    <div>                        
+                        <input type="text" name="nombreYApellido" id="nombreYApellido" placeholder="Nombre y Apellido" class="marginPadding">
+                    </div>
                     <div>
-                        <label for="email">Direccón de correo electrónico </label>
-                        <br>
-                        <input type="email" name="email" id="email" placeholder="avisos@avisos.com.ar">
+                        <label for="email" class="rotulo">Direccón de correo electrónico </label>
                     </div>
-                    <br>
+                    <div>                        
+                        <input type="email" name="email" id="email" placeholder="avisos@avisos.com.ar" class="marginPadding">
+                    </div>
                     <div>
-                        <label for="tema">Tema</label>
-                        <br>
-                        <input type="text" name="tema" id="tema" placeholder="Tu pregunta">
-                        <br>
-                        <label for="consulta">¿En que podemos ayudarte hoy?</label>
-                        <br>
-                        <input type="text" name="consulta" id="consulta" placeholder="Escribe tu pregunta / mensaje con detalles">
-                        <br>
+                        <label for="tema" class="rotulo">Tema</label>
                     </div>
-                    <br>
+                    <div>                        
+                        <input type="text" name="tema" id="tema" placeholder="Tu pregunta" class="marginPadding dialogoUno">
+                    </div>
+                    <div>                        
+                        <label for="consulta" class="rotulo">¿En que podemos ayudarte hoy?</label>
+                    </div>
+                    <div>                        
+                        <input type="text" name="consulta" id="consulta left" placeholder="Escribe tu pregunta / mensaje con detalles" class="marginPadding dialogoDos">
+                    </div>
+
+                    <div class="marginPadding">
+                      <label for="confirmar" class="rotulo">Confirma datos </label>
+                      <input type="checkbox" name="confirma" id="confirma" value="1">
+                  </div>
+                  <div class="marginPadding">
+                      <input type="submit" value="Enviar" class="boton">
+                      <input type="reset" value="Borrar" class="boton">
+                  </div>
             </fieldset>
         </section>
         <section>
@@ -94,9 +103,8 @@
                 <a href="https://www.instagram.com/"><img src="https://image.flaticon.com/icons/png/128/174/174855.png" alt="instagram" title="Instagram" height="25" width="25"></a>   
             </div>
         </section> 
-        <br><br><br><br>
     </main>
-    
+</div>  
 
     <footer class="footer">
         <span class="footer__copyRight">Copyright &copy; Tincho</span> 
@@ -105,5 +113,6 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <!-- Java Scrip de BootTrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>

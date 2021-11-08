@@ -80,7 +80,7 @@
 }
 .main{
     margin-top: 14rem;
-    margin-bottom: 60rem;
+    margin-bottom: 7rem;
 }
 /* Parrafo Index */
 .sectionParrafo{
@@ -378,7 +378,7 @@ section div p{
         "contacto";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-        background-color: tomato;
+        background-color: rgb(1, 75, 75);
     }
     .imagenPortada{
         height: 70%;
@@ -394,4 +394,66 @@ section div p{
     .tamano{
         width: 18rem;
     }
+}
+
+/* Formato del formulario contacto */
+.bodyContacto{
+    padding: 4rem;
+
+}
+.contorno{
+    background-color: rgb(1, 75, 75);
+    padding: 4rem;
+    /* margin: 5rem 10rem; */
+    border-radius: 3rem;
+    border: 2px  black solid;
+    flex-wrap: wrap;
+}
+#texto{
+    color: rgb(255, 255, 255);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.rotulo{
+    color: rgb(204, 204, 204);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+}
+.marginPadding{
+ margin: .5rem ;
+}
+.dialogoUno{
+    width: 50%;
+}
+.dialogoDos{
+    width: 100%;
+    height: 5rem;
+}
+.boton{
+    padding: 0rem 1rem;
+    margin: .5rem .6rem;
+    color: rgb(1, 75, 75);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    background-color: lightgray;
+}   
+@media only screen and (max-width: 917px){
+    .contorno{
+        /* background-color: tomato;
+        padding: 2rem;
+        margin: 5rem 10rem;
+        border-radius: 3rem;
+        border: 2px  black solid; */
+    } 
 }
