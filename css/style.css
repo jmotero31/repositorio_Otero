@@ -82,6 +82,10 @@
     margin-top: 14rem;
     margin-bottom: 7rem;
 }
+.mainUno{
+    margin-top: 1rem;
+    margin-bottom: 7rem;  
+}
 /* Parrafo Index */
 .sectionParrafo{
     height: 30rem;
@@ -397,28 +401,28 @@ section div p{
 }
 
 /* Formato del formulario contacto */
-.bodyContacto{
+.ContenedorContactoPublica{
     padding: 4rem;
-
 }
 .contorno{
     background-color: rgb(1, 75, 75);
     padding: 4rem;
     /* margin: 5rem 10rem; */
     border-radius: 3rem;
-    border: 2px  black solid;
+    border: 2px  whitesmoke solid;
     flex-wrap: wrap;
 }
 #texto{
     color: rgb(255, 255, 255);
     font-style: normal;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    text-transform: capitalize;
+    text-transform:none ;
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .rotulo{
     color: rgb(204, 204, 204);
     font-style: normal;
@@ -429,6 +433,10 @@ section div p{
 }
 .marginPadding{
  margin: .5rem ;
+}
+.marginTopin{
+    margin-top: 2rem;
+    margin-bottom: 0rem;
 }
 .dialogoUno{
     width: 50%;
@@ -456,4 +464,28 @@ section div p{
         border-radius: 3rem;
         border: 2px  black solid; */
     } 
+}
+/* Formato Publicita */
+.campoUno{
+    margin-bottom: 3rem;
+}
+.campo{
+    margin: 1rem;
+}
+.tituloPublicacion{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: rgba(255, 255, 255, 0.85);
+}
+#h2Contacto{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: rgba(157, 3, 3, 0.85);
+    text-decoration: none;
 }

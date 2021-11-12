@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../sass-live-compiler/estilos/main.css">
 </head>
 <body>
+  <!-- Navegacion -->
   <header class="header">
     <nav class="navbar navbar-expand-lg navbar-light bg-light nav">
         <div class="container-fluid">
@@ -39,15 +40,17 @@
           </div>
         </div>
       </nav>
-    </header> 
-<main class="anchoPrede">
-  <section>
+    </header>     
+<main class="mainUno ContenedorContactoPublica">
+  <!-- Formulario Completo en dos partes -->
+  <section class="contorno">
     <form action="" method="GET">
-        <fieldset class="contorno">
-            <legend>Publicita tú Anuncio</legend>
+      <h1 id="texto">Adelantate y precargar tú anuncio</h1>
+      <legend class="tituloPublicacion">Publicita tú Anuncio</legend>
+        <fieldset class="campoUno">
             <div>
-                <label for="categoria">Categoría </label>
-                <select name="categoria" id="categoria" aria-placeholder="Rubros">
+                <div><label for="categoria" class="rotulo">Categoría</label></div>
+                <select name="categoria" id="categoria" aria-placeholder="Rubros" class="marginPadding">
                         <option value="" disabled selected>Rubro</option>
                         <option value="bienestar">Bienestar</option>
                         <option value="cuidados">Cuidados</option>
@@ -59,65 +62,50 @@
                         <option value="tecnologia">Tecnología</option>
                 </select>
             </div>
-            <br>
             <div>
-                <label for="localidad">Localidad </label>
-                <select name="localidad" id="localidad">
+                <div><label for="localidad" class="rotulo">Localidad </label></div>
+                <select name="localidad" id="localidad" class="marginPadding">
                     <option value="" disabled selected>Seleccione</option>
                     <option value="ensenada">Ensenada</option>
                     <option value="berisso">Berisso</option>
                     <option value="laplata">La Plata</option>
                 </select>
             </div>
-            <br>
             <div>
-                <label for="titulo">Título de tú clasificado </label>
-                <br>
-                <input type="text" name="titulo" id="titulo" placeholder="Ingrese un título relevante a tú publicación">
-                <br>
-                <label for="descripcion">Descripción </label>
-                <br>
-                <input type="text" name="descripcion" id="descripcion">
-                <br>
+                <div><label for="titulo" class="rotulo">Título de tú clasificado</label></div>
+                <input type="text" name="titulo" id="titul" placeholder="Ingrese un título relevante a tú publicación" class="dialogoUno marginPadding">
+                <div><label for="descripcion" class="rotulo">Descripción</label></div>
+                <input type="text" name="descripcion" id="descripcion" placeholder="Escribe una descripción de su anuncio" class="dialogoDos marginPadding">
             </div>
-            <br>
     </fieldset>
-    <fieldset class="contorno">
-        <legend>Datos Personales</legend>
+    <legend class="tituloPublicacion">Datos Personales</legend>
+    <fieldset class="campoUno">
             <div>
-                <label for="nombre">Nombres </label>
-                <br>
-                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
-                <br>
-                <label for="apellido">Apellidos </label>
-                <br>
-                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
-            </div>
-            <br>
-            <div>
-                <label for="email">E-Mail </label>
-                <input type="email" name="email" id="email" placeholder="avisos@avisos.com.ar">
+                <div><label for="nombre" class="rotulo">Nombres</label></div>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" class="marginPadding">
+                <div><label for="apellido" class="rotulo">Apellidos</label></div>
+                <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" class="marginPadding">
             </div>
             <div>
-                <label for="cel">Celular </label>
-                <input type="number" name="cel id="cel" placeholder="221XXXXXXX">
+                <div><label for="email" class="rotulo">E-Mail</label></div>
+                <input type="email" name="email" id="email" placeholder="avisos@avisos.com.ar" class="marginPadding">
             </div>
-            <br>
             <div>
-                <label for="confirmar">Confirma datos </label>
+                <div><label for="cel" class="rotulo">Celular</label></div>
+                <input type="number" name="cel" id="cel" placeholder="221XXXXXXX" class="marginPadding">
+            </div>
+            <div class="marginPadding">
+                <label for="confirmar" class="rotulo">Confirma datos</label>
                 <input type="checkbox" name="confirma" id="confirma" value="1">
             </div>
-            <br>
-            <div>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
+            <div class="marginPadding marginTopin">
+                <input type="submit" value="Enviar" class="boton">
+                <input type="reset" value="Borrar" class="boton">
             </div>
         </fieldset>
     </form>
   </section>
-    <br><br>
-    <a href="./precio.html"><h4>Listado de Precio</h4></a>
-    <br><br><br><br><br>
+  <div class="marginTopin"><a href="./precio.html" id="h2Contacto"><h2 id="h2Contacto">Listado de Precio</h2></a></div>
 </main>
   <footer class="footer">
     <span class="footer__copyRight">Copyright &copy; Tincho</span> 
