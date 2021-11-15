@@ -32,9 +32,9 @@
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 1rem 0rem 2rem 0rem;
-  padding: .8rem;
-  border-radius: .5rem;
+  margin: 0rem 0rem 2rem 0rem;
+  padding: 0.5rem;
+  border-radius: .2rem;
   background-color: #014b4b;
 }
 
@@ -54,7 +54,7 @@
   background-color: #006363;
   padding: .5rem 1rem .5rem 1rem;
   margin: 0rem;
-  border-radius: 7%;
+  border-radius: 6%;
   -webkit-transition: all .3s;
   transition: all .3s;
 }

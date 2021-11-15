@@ -57,7 +57,12 @@
     background-image: url(../images/portada.jpg);
     display: flex;
     justify-content:center;
-    margin-top: 3rem;
+    margin: 0rem;
+}
+.imagenCaja{
+    color: rgb(3, 255, 221);
+    padding: 0rem 2rem 0rem 5rem;
+    margin : 3rem;
 }
 .nofound{
     background-image: url(../images/404.png);
@@ -73,13 +78,9 @@
     color: chocolate;
 
 }
-.imagenCaja{
-    color: rgb(3, 255, 221);
-    padding: 0rem 2rem 0rem 5rem;
-    margin: 10rem;
-}
+
 .main{
-    margin-top: 14rem;
+    margin-top: 0rem;/* margin-top: 14rem;  */
     margin-bottom: 7rem;
 }
 .mainUno{
@@ -122,6 +123,7 @@ header h1{
     animation-duration: 8s;
     animation-delay: 2s;
     margin-top: 2rem;  
+    z-index: -10;
 }
 @keyframes textoEnMovimiento{
     0%{
@@ -190,21 +192,49 @@ body {
 .encabezado{
     color:white;
     background-color: #464660;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: rgb(255, 255, 255);
 }
 .referencia{
     color:white;
     background-color: #368B85;
+    text-align: center;
+    padding: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: rgba(255, 255, 255, 0.912);
 }
 .informacion{
     background-color: #B4B897;
+    text-align: center;
+    padding: 1rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
+    color: rgba(255, 255, 255, 0.85);
 }
-
 /* Formulario de contacto */
 legend{
     font-size: 1rem;
 }
 #blanco{
-    color: white;
+    color: rgb(202, 202, 202); 
+    background-color: rgba(2, 1, 1, 0);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-transform: none;
 }
 #color{
     color:rgb(218, 218, 218);
@@ -240,7 +270,11 @@ legend{
     font-weight: bold;
     font-size:xx-large; 
     text-decoration:double;
+    color: rgba(157, 3, 3, 0.85);
 }  
+#cuadro{
+    border-radius: 5rem;
+}
 section div span{
     color: yellowgreen;
 }
@@ -280,7 +314,6 @@ section div p{
     height: 10rem;
     margin-bottom: 18rem;
 }
-
 @media only screen and (max-width: 920px){
     .contactoIndex{
         margin-top: 15rem ;
@@ -318,8 +351,8 @@ section div p{
 .aviso{
     display: grid;
     grid-template-areas: 
-    "imagen titulo modo"
-    "imagen descripcion descripcion"
+    "imagen titulo titulo"
+    "imagen modo modo"
     "imagen descripcion descripcion"
     "ubicacion ubicacion contacto";
     grid-template-columns: 1fr 2fr 2fr ;
@@ -358,10 +391,14 @@ section div p{
 .ubicacion{
     grid-area: ubicacion;
     align-self: center;
+    padding: 0rem;
+    margin: 0rem;
 }
 .contacto{
     grid-area: contacto;
     align-self: center;
+    padding: 0rem;
+    margin: 0rem;
 }
 #titulo{
     font-style: normal;
@@ -399,7 +436,6 @@ section div p{
         width: 18rem;
     }
 }
-
 /* Formato del formulario contacto */
 .ContenedorContactoPublica{
     padding: 4rem;
@@ -456,13 +492,10 @@ section div p{
     text-transform: none;
     background-color: lightgray;
 }   
-@media only screen and (max-width: 917px){
-    .contorno{
-        /* background-color: tomato;
-        padding: 2rem;
-        margin: 5rem 10rem;
-        border-radius: 3rem;
-        border: 2px  black solid; */
+@media only screen and (max-width: 577px){
+    .videoTamano{
+        width: 300px;
+        height: 215px;
     } 
 }
 /* Formato Publicita */
@@ -488,4 +521,7 @@ section div p{
     text-transform: none;
     color: rgba(157, 3, 3, 0.85);
     text-decoration: none;
+}
+.indexZeta{
+    z-index: -10;
 }
